@@ -1,0 +1,12 @@
+.editLinePhone {
+    &__code {
+      display: flex;
+      align-items: baseline;
+    }
+  
+    .smsToken__wrapper {
+      .textField::after {
+        display: none;
+      }
+    }
+  }

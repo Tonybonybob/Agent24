@@ -1,0 +1,104 @@
+.landingRealtors {
+    padding-top: 52px;
+    padding-bottom: 52px;
+    position: relative;
+    background: #FFF;
+    overflow: hidden;
+  
+    @media (max-width: 1023px) {
+      background: #FFF;
+      padding-bottom: 0;
+    }
+  
+    &::after {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      background: linear-gradient(90deg, rgba(242, 201, 76, 0.72) 0%, rgba(242, 153, 74, 0.72) 100%), #F2C94C;
+      width: 121px;
+      height: 121px;
+      border-radius: 50%;
+      bottom: 80px;
+      right: -85px;
+  
+      @media (max-width: 1023px) {
+        display: none;
+      }
+    }
+  
+    &__title {
+      font-size: 32px;
+      padding-left: 20px;
+      padding-right: 20px;
+      letter-spacing: 0.03em;
+      margin: 0 auto;
+      text-align: center;
+      color: #333333;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+  
+    &__subtitle {
+      font-weight: 400;
+      font-size: 24px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 900px;
+      letter-spacing: 0.03em;
+      color: #8c8883;
+      margin-bottom: 36px;
+    }
+  
+    &__photo {
+      position: relative;
+      margin: 0 auto;
+  
+      &::before {
+        content: '';
+        display: inline-block;
+        background: linear-gradient(90deg, rgba(242, 201, 76, 0.72) 0%, rgba(242, 153, 74, 0.72) 100%), #F2C94C;
+        width: 103px;
+        height: 103px;
+        border-radius: 50%;
+        position: absolute;
+        top: -20px;
+        left: -206px;
+      }
+  
+      &::after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        background: linear-gradient(270deg, rgba(0, 151, 167, 0.72) 0%, rgba(21, 190, 160, 0.72) 100%), #15BEA0;
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        right: -224px;
+        top: 140px;
+      }
+  
+      @media (max-width: 1023px) {
+        &::before, &::after {
+          display: none;
+        }
+      }
+  
+      @media (min-width: 1024px) {
+        width: 658px;
+      }
+  
+      @media (min-width: 1280px) {
+        width: 639px;
+      }
+  
+      @media (min-width: 1440px) {
+        width: 863px;
+      }
+  
+      > img {
+        width: 100%;
+      }
+    }
+  }

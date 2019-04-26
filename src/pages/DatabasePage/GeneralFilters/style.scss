@@ -1,0 +1,192 @@
+.generalFilters {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  
+    &__item {
+      &_mobile {
+        display: none;
+  
+        &_big {
+          min-width: 200px;
+          max-width: 65%;
+        }
+  
+        &_small {
+          max-width: calc(35% - 8px);
+          margin-left: 0 !important;
+        }
+  
+        @media (max-width: 767px) {
+          display: flex;
+        }
+      }
+  
+      @media (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 2;
+        margin-top: 0;
+  
+        &_desktop {
+          display: none;
+        }
+  
+        &_last {
+          flex-grow: 1;
+        }
+  
+        .databaseButtons__item {
+          flex: 1 0 90px;
+        }
+      }
+    }
+  
+    .selectInput {
+      font-family: 'Play', sans-serif;
+  
+      &__control {
+        background: #FFF;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        border-radius: 2px;
+        height: 36px;
+        min-height: 36px;
+  
+        .selectInput__value-container {
+          padding: 0 12px;
+  
+          .selectInput__single-value {
+            margin-right: 0;
+            margin-left: 0;
+            position: relative;
+            max-width: none;
+            top: auto;
+            transform: none;
+            -webkit-transform: none;
+            -ms-transform: none;
+          }
+        }
+  
+        &--is-focused {
+          background: #0097A7;
+          color: #FFF;
+          outline: none;
+          box-shadow: 0px 1px 1px rgba(12, 77, 84, 0.06);
+          border-radius: 2px 2px 0px 0px;
+  
+          .selectInput__placeholder, .selectInput__input, .selectInput__single-value {
+            color: #FFF;
+          }
+  
+          .selectInput__dropdown-indicator svg {
+            transform: rotate(180deg);
+            fill: #FFF;
+          }
+        }
+      }
+  
+      &__placeholder, &__input, &__single-value {
+        font-size: 14px;
+        color: #121212;
+        margin-left: 6px;
+        font-weight: bold;
+  
+        @media (max-width: 1023px) {
+          font-size: 13px;
+        }
+      }
+  
+      &__placeholder {
+        color: #000000;
+      }
+  
+      &__indicator {
+        &-separator {
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-right: 0;
+          background: rgba(208, 216, 220, 0.48);
+        }
+      }
+  
+      &__dropdown-indicator svg {
+        opacity: 0.54;
+        fill: #0097A7;
+        transition: all 0.15s;
+      }
+  
+      &__option {
+        padding: 5px 14px;
+        font-size: 16px;
+        height: 40px;
+        line-height: 30px;
+        box-sizing: border-box;
+  
+        &--is-focused, &--is-selected {
+          background: #EFF3F7;
+          color: #000;
+        }
+      }
+  
+      &__menu {
+        margin-top: 0px;
+        padding-top: 0;
+        padding-bottom: 0;
+        box-shadow: 0px 5px 16px rgba(40, 56, 49, 0.16);
+        border-radius: 0px 0px 2px 2px;
+        z-index: 3;
+        border-radius: 0;
+      }
+    }
+  
+    &__mls {
+      padding: 9px 9px;
+      box-shadow: 0px 1px 1px rgba(12, 77, 84, 0.06);
+      background: #ffffff;
+      color: #121212;
+      display: inline-block;
+      transition: opacity 0.15s;
+      cursor: pointer;
+      box-sizing: border-box;
+      height: 36px;
+      font-size: 14px;
+      font-weight: bold;
+      opacity: 0.5;
+      text-align: center;
+  
+      @media (max-width: 1023px) {
+        padding: 10px 9px;
+        font-size: 13px;
+      }
+  
+      &:first-child {
+        border-radius: 2px 0 0 2px;
+      }
+  
+      &:last-child {
+        border-radius: 0 2px 2px 0;
+      }
+  
+      @media (max-width: 767px) {
+        width: 50%;
+        margin-bottom: 8px;
+      }
+  
+      &_active {
+        opacity: 1;
+      }
+  
+      &Wrapper {
+        margin-left: auto;
+  
+        @media (max-width: 767px) {
+          width: 100%;
+          margin-right: 8px;
+        }
+      }
+    }
+  }

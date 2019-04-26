@@ -1,0 +1,19 @@
+.client-content {
+    &__topButton {
+      background-color: #fff;
+      padding: 12px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+      margin-bottom: 8px;
+  
+      &_disabled {
+        background-color: transparent;
+        color: #aaa !important;
+        box-shadow: none;
+        border: 1px solid #e3e3e3;
+      }
+  
+      button {
+        width: 100%;
+      }
+    }
+  }

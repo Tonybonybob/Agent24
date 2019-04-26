@@ -1,0 +1,207 @@
+.landingMessanger {
+    padding-top: 38px;
+    padding-bottom: 58px;
+    background-image: url('/public/assets/Messenger.png');
+    background-color: #FFF;
+    background-repeat: no-repeat;
+  
+    @media (max-width: 1023px) {
+      background: #FFF;
+    }
+  
+    @media (min-width: 1024px) {
+      background-position: -136px 114px;
+    }
+  
+    @media (min-width: 1280px) {
+      background-position: 64px 104px;
+    }
+  
+    @media (min-width: 1440px) {
+      background-position: 174px 184px;
+    }
+  
+    .landingClientRequestFeatures__item {
+      @media (max-width: 1023px) {
+        max-width: calc(100vw - 24px);
+      }
+    }
+  
+    .dotNav {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+  
+      &__container {
+        margin-right: 16px;
+  
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+  
+      &__item {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  
+    &__slider {
+      &Wrapper {
+        display: flex;
+  
+        @media (min-width: 440px) and (max-width: 1023px) {
+          justify-content: center;
+        }
+      }
+  
+      &Title, &Text {
+        max-width: 234px;
+        color: #333333;
+        margin: 0 auto;
+        text-align: center;
+      }
+  
+      &Title {
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-weight: bold;
+      }
+  
+      &Text {
+        opacity: 0.72;
+        line-height: 20px;
+        font-size: 14px;
+        margin-bottom: 32px;
+        margin-top: 16px;
+      }
+    }
+  
+    &__title {
+      padding-bottom: 32px;
+  
+      .title__title {
+        max-width: 450px;
+        margin: 0 auto;
+      }
+    }
+  
+    .landingFeature {
+      &__title {
+        display: flex;
+        align-items: center;
+      }
+  
+      &__description {
+        padding-left: 88px;
+      }
+    }
+  
+    &__item {
+      display: flex;
+      margin-top: 32px;
+  
+      &_first {
+        margin-top: 0;
+      }
+  
+      svg {
+        flex-shrink: 0;
+        margin-right: 24px;
+      }
+    }
+  }
+  
+  .messangerSliderIcons {
+    display: flex;
+    transition: all 0.15s;
+    margin-bottom: 8px;
+  
+    &_0 {
+      margin-left: -20px;
+    }
+  
+    &_1 {
+      margin-left: calc(-148px - (100vw - 184px));
+      // margin-left -300px
+      // @media (min-width 375px)
+      // margin-left -350px
+      // @media (min-width 414px)
+      // margin-left -380px
+    }
+  
+    &_2 {
+      margin-left: calc(-276px - ((100vw - 184px) * 2));
+      // @media (min-width 375px)
+      // margin-left -680px
+      // @media (min-width 414px)
+      // margin-left -740px
+    }
+  
+    &__item {
+      width: 64px;
+      height: 64px;
+      position: relative;
+      margin-right: calc(((100vw - 184px) / 2));
+      flex-shrink: 0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      &_blue {
+        background: #54A9EB;
+      }
+  
+      &_green {
+        background: #25D366;
+      }
+  
+      &_purple {
+        background: #9074E8;
+      }
+  
+      &:last-child {
+        margin-right: 0;
+      }
+  
+      &:nth-child(even) {
+        margin-top: -16px;
+      }
+  
+      &:nth-child(odd) {
+        &::before {
+          content: '';
+          position: absolute;
+          right: 60px;
+          bottom: 38px;
+          width: calc(((100vw - 184px) / 2));
+          height: 0px;
+          border-top: 1px dashed #c4c4c4;
+          transform: rotate(15deg);
+        }
+  
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 38px;
+          left: 64px;
+          width: calc(((100vw - 184px) / 2));
+          height: 0px;
+          border-top: 1px dashed #c4c4c4;
+          transform: rotate(-15deg);
+        }
+  
+        @media (min-width: 520px) {
+          &::before {
+            transform: rotate(10deg);
+          }
+  
+          &::after {
+            transform: rotate(-10deg);
+          }
+        }
+      }
+    }
+  }

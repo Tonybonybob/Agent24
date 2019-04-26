@@ -1,0 +1,171 @@
+.resumesPage
+  position relative
+  overflow hidden
+  padding-bottom 16px
+  background rgba(197,242,228, .24)
+  .landingClientRequestFeature__description
+    overflow unset !important
+  &::before, &::after
+    position absolute
+    content ''
+    border-radius 50%
+  &::before
+    bottom 42px
+    right 33px
+    width 35px
+    height 35px
+    background linear-gradient(270deg, rgba(0, 151, 167, 0.72) 0%, rgba(21, 190, 160, 0.72) 100%), #15BEA0
+  &::after
+    width 98px
+    height 98px
+    background linear-gradient(90deg, rgba(242, 201, 76, 0.72) 0%, rgba(242, 153, 74, 0.72) 100%), #F2C94C
+    bottom 330px
+    right -49px
+  @media (max-width 1023px)
+    &::after, &::before
+      display none
+  .landingClientRequestFeature
+    &:first-child
+      margin-bottom 24px
+    &_active
+      padding-bottom 0 !important
+    &__title
+      font-weight 700
+    &__description
+      display none
+    &_active
+      .landingClientRequestFeature__description
+        display block
+    @media (max-width 1023px)
+      padding 24px
+  &__required
+    &List, &Title
+      font-size 14px
+      line-height 20px
+      color #333333
+      opacity .72
+    &Title
+      margin-bottom 16px
+      font-weight bold
+    &List
+      padding-left 16px
+  &__title
+    font-size 32px
+    letter-spacing .03em
+    font-weight bold
+    color #333333
+    position relative
+    margin-bottom 48px
+    &::before
+      position absolute
+      content ''
+      border-radius 50%
+      width 32px
+      height 32px
+      background linear-gradient(90deg, rgba(242, 201, 76, 0.72) 0%, rgba(242, 153, 74, 0.72) 100%), #F2C94C
+      bottom -400px
+      left -60px
+  &__form
+    margin-left -90px !important
+    margin-right -34px !important
+    padding-top 16px
+    padding-bottom 16px
+    background #E3F5F0
+    .textField
+      .MuiInput-underline-19
+        &::before
+          position absolute
+      margin-bottom 8px
+    .row__col:last-child
+      display flex
+      margin-top -12px
+      align-items center
+    @media (max-width 1023px)
+      margin-left -86px !important
+      margin-right -30px !important
+      padding-bottom 12px
+    @media (min-width 1024px)
+      width calc(100% + 124px)
+  .container
+    padding-bottom 0
+  .headerUnauthorised
+    position relative
+    &::after, &::before
+      border-radius 50%
+      content ''
+      position absolute
+    &::after
+      bottom -48px
+      right 100px
+      width 32px
+      height 32px
+      background linear-gradient(90deg, rgba(242, 201, 76, 0.72) 0%, rgba(242, 153, 74, 0.72) 100%), #F2C94C
+    &::before
+      left -60px
+      bottom -150px
+      width 93px
+      height 93px
+      background linear-gradient(270deg, rgba(0, 151, 167, 0.72) 0%, rgba(21, 190, 160, 0.72) 100%), #15BEA0
+    @media (max-width 1023px)
+      &::before
+        left 250px
+        bottom -110px
+        background linear-gradient(90deg, rgba(242, 201, 76, 0.72) 0%, rgba(242, 153, 74, 0.72) 100%), #F2C94C
+      &::after
+        bottom -103px
+        right 250px
+        background linear-gradient(270deg, rgba(0, 151, 167, 0.72) 0%, rgba(21, 190, 160, 0.72) 100%), #15BEA0
+
+.landingModal
+  position fixed
+  width 100%
+  left 0
+  top: 0
+  height 100%
+  z-index 16
+  text-align center
+  background-color rgba(0,0,0,0.5)
+  background radial-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.75))
+  &__wrapper
+    box-sizing border-box
+    position absolute
+    width 100%
+    top 50%
+    left 0
+    transform translateY(-50%)
+  &__inner
+    position relative
+    background linear-gradient(270deg, rgba(0, 151, 167, 0.72) 0%, rgba(21, 190, 160, 0.72) 100%), #15BEA0
+    padding 66px 20px
+    @media (min-width 1024px)
+      padding 66px 80px
+    &Content
+      border-radius 2px
+      border 2px solid #FFF
+      padding 32px 24px
+  &__title
+    font-size 32px
+    letter-spacing .03em
+    color #FFF
+  &__subTitle
+    font-size 24px
+    letter-spacing .03em
+    color #FFF
+    max-width 540px
+    font-weight normal
+    margin 0 auto
+    margin-top 16px
+  &__close
+    position absolute
+    right 10px
+    top 10px
+    z-index 17
+    padding 9px
+    width 32px
+    height 32px
+    box-sizing border-box
+    border-radius 50%
+    cursor pointer
+    background rgba(237,247,244, .48)
+    path
+      fill #0097a7

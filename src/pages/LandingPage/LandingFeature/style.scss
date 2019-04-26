@@ -1,0 +1,53 @@
+.landingFeature {
+    &_highlightDisabled {
+        & .landingFeature {
+            &__title {
+                border-bottom: 0;
+                padding-bottom: 0;
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            &__description {
+                padding-top: 12px;
+            }
+        }
+    }
+
+    &_blue {
+        & .landingFeature:after {
+            background-color: #56CCF2;
+            background: linear-gradient(to right, #56CCF2, #2D9CDB);
+        }
+    }
+
+    &__title {
+        position: relative;
+        font-size: 20px;
+        color: #333;
+        font-weight: 700;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #EBE5DD;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 64px;
+            height: 2px;
+            background-color: #F2C94C;
+            background: linear-gradient(to right, #F2C94C, #F2994A);
+        }
+    }
+
+    &__description {
+        color: #656565;
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 16px;
+    }
+}

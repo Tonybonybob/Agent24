@@ -1,0 +1,15 @@
+.profileServices {
+    overflow: hidden;
+
+    &__title {
+        font-size: 18px;
+        color: #000000;
+        font-weight: 500;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -21px;
+    }
+}

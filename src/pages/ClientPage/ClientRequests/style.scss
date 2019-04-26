@@ -1,0 +1,18 @@
+.client-content {
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			left: 0;
+			bottom: 0;
+			height: 1px;
+			background: rgba(208, 216, 220, 0.72);
+		}
+	}
+}

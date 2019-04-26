@@ -1,0 +1,73 @@
+.flatBuyDescription {
+    &__mapArea {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__deleteArea {
+        padding: 16px 24px;
+        cursor: pointer;
+    }
+
+    .areaSegments {
+        &__edit {
+            padding: 0;
+            overflow: hidden;
+        }
+
+        &Segment {
+            &__add {
+                @media (max-width: 1023px) {
+                    display: flex;
+                    margin-left: 0;
+                    margin-right: 0;
+                    align-items: center;
+                    border-radius: 2px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    justify-content: center;
+                    color: #ffffff;
+                    background: #0097A7;
+                }
+            }
+
+            margin-top: 12px;
+
+            @media (max-width: 1023px) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        &Line {
+            @media (max-width: 1023px) {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+
+                &::after {
+                    display: none;
+                }
+
+                .resizeInput {
+                    width: 100%;
+
+                    input {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+
+        &AutoComplete {
+            @media (max-width: 1023px) {
+                border-bottom: 1px solid rgba(0, 0, 0, .16);
+                margin-bottom: 22px;
+                max-width: unset;
+                width: 100%;
+            }
+        }
+    }
+}

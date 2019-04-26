@@ -1,0 +1,22 @@
+.areaSegmentsAutoComplete {
+    margin-right: 16px;
+    max-width: 30%;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    .autoComplete {
+        max-width: 100%;
+
+        &__suggestionsContainerOpen {
+            width: max-content;
+        }
+    }
+
+    .resizeInput,
+    input {
+        max-width: 100%;
+        background: transparent;
+    }
+}

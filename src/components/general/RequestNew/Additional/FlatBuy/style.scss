@@ -1,0 +1,6 @@
+@import '../style.scss';
+.flatBuyAdditional {
+    & &__wrapper {
+        padding: 12px 0 80px;
+    }
+}

@@ -1,0 +1,60 @@
+.agencyWorkerAutocomplete {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    .searchBar {
+      position: relative;
+  
+      input {
+        padding-left: 55px;
+      }
+  
+      &::before {
+        position: absolute;
+        content: '+380';
+        color: rgba(0, 0, 0, 0.4);
+        left: 6px;
+        top: 6px;
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+  
+    .autoComplete__sugestionsContainerOpen {
+      margin-top: 0;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+  
+    &__photo {
+      width: 40px;
+      height: 40px;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+  
+    &__add {
+      color: #0097a7;
+      font-size: 10px;
+      font-weight: bold;
+    }
+  
+    &__description {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    &__name {
+      font-size: 12px;
+      color: #000000;
+    }
+  
+    &__type {
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.48);
+    }
+  }

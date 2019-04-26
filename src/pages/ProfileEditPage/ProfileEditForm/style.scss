@@ -1,0 +1,87 @@
+@import '../../../styles/variables';
+
+.profileForm {
+    #loadfile {
+      display: none;
+    }
+  
+    .photoEdit {
+      width: 152px;
+      position: relative;
+      text-align: center;
+  
+      .dropZone {
+        border-radius: 2px;
+        height: 152px;
+        width: 100%;
+        color: $colorWhite;
+        padding: 55px 48px;
+        font-weight: bold;
+        font-size: 9px;
+        margin-bottom: 16px;
+  
+        &::after {
+          content: '';
+          position: absolute;
+          left: 10%;
+          top: 10%;
+          width: 80%;
+          height: 80%;
+          border: 1px transparent dashed;
+          border-radius: 2px;
+          transition: border 0.2s;
+        }
+  
+        p {
+          margin-top: 5px;
+        }
+  
+        span, p {
+          opacity: 0;
+          transition: opacity 0.2s;
+        }
+  
+        &:hover {
+          &::after {
+            border-color: $colorWhite;
+          }
+  
+          p, span {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  
+    .inputFields .input {
+      margin-bottom: 24px;
+      width: 100%;
+    }
+  
+    .c-control-label {
+      margin-bottom: 33px;
+    }
+  
+    .selectGroup {
+      display: flex;
+      flex: row nowrap;
+      margin-top: 18px;
+  
+      > div {
+        margin-right: 30px;
+  
+        &:nth-of-type(1) {
+          flex: 2 2 54px;
+        }
+  
+        &:nth-of-type(2) {
+          flex: 4 4 103px;
+        }
+  
+        &:nth-of-type(3) {
+          margin: 0;
+          flex: 3 3 79px;
+        }
+      }
+    }
+  }

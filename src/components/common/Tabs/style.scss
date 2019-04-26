@@ -1,0 +1,101 @@
+.tabs {
+    &.miniTabs {
+        float: left;
+        width: 100%;
+
+        .tabs__container {
+            width: 100%;
+            display: flex;
+
+            .tabs__item {
+                position: relative;
+                padding-bottom: 15px;
+                text-align: center;
+                display: inline-flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                cursor: pointer;
+
+                &.tabs__item_selected {
+                    &:after {
+                        content: ' ';
+                        background-color: #0097A7;
+                        display: block;
+                        height: 2px;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    & &__container {
+        .MuiTabs-flexContainer-2 {
+           &.tabs__item {
+                margin-right: 32px;
+            }
+        }
+    }
+
+    & &__container {
+        border-bottom: 1px solid rgba(208, 216, 220, 0.72);
+
+        .tabs__item {
+            margin-right: 16px;
+            color: rgba(0, 0, 0, 0.48);
+            flex-grow: 1;
+            flex-shrink: 1;
+            max-width: unset;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            @media (max-width: 575px) {
+                margin-right: 11px;
+            }
+
+            min-width: max-content;
+        }
+
+        .tabs__item_selected {
+            color: #000000;
+        }
+
+        .tabs__labelWrapper {
+            padding: 0;
+        }
+
+        .tabs__label {
+            font-size: 12px;
+            font-family: 'Play', sans-serif;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    }
+
+    & &__scrollButtons {
+        transition: all 0.2s;
+        color: rgba(0, 0, 0, 0.48);
+    }
+
+    & button &__scrollButtons {
+        max-width: 18px;
+        display: block;
+
+        svg {
+            margin-top: 5px;
+        }
+    }
+
+    & div &__scrollButtons {
+        max-width: 0;
+        // @media (max-width 575px)
+        // max-width 18px
+        // display block
+    }
+}

@@ -1,0 +1,27 @@
+.agencyEmployees {
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+  
+      .searchBar {
+        margin: 20px 0;
+      }
+    }
+  
+    &__title {
+      font-weight: 500;
+      font-size: 18px;
+    }
+  
+    &__inviteEmployee {
+      background: #fff;
+      border-radius: 2px;
+      padding: 24px 22px;
+  
+      &__buttons {
+        justify-content: flex-end;
+        display: flex;
+        margin-top: 20px;
+      }
+    }
+  }

@@ -1,0 +1,88 @@
+.cropDropBox {
+    margin-bottom: 62px;
+
+    &__photo {
+        position: relative;
+        width: 152px;
+        height: 152px;
+
+        &Inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(18, 18, 18, 0.32);
+            border-radius: 2px;
+        }
+
+        &Delete {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            cursor: pointer;
+        }
+
+        avatar-image {
+            .cropDropBox__cropperInner {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(18, 18, 18, 0.32);
+                border-radius: 2px;
+            }
+
+            .cropDropBox__cropperInnerButton {
+                margin: 13px;
+                width: calc(100% - 26px);
+                height: calc(100% - 26px);
+                border: 1px dashed #fff;
+                border-radius: 2px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-size: 9px;
+
+                span {
+                    width: 57px;
+                    margin-top: 8px;
+                }
+            }
+
+            p {
+                dispay: none;
+            }
+
+            &>div {
+                &:last-child {
+                    position: relative !important;
+                    top: unset !important;
+                    background-color: transparent !important;
+
+                    &>div {
+                        &>div {
+                            &:first-child {
+                                margin: 5px 0 !important;
+
+                                &>div {
+                                    width: 100% !important;
+                                    background: #d6d6d6 !important;
+
+                                    &>span {
+                                        background-color: #0097a7 !important;
+                                        border: none !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

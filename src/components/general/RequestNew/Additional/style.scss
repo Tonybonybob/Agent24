@@ -1,0 +1,51 @@
+.newRequestAdditional {
+    &__line {
+        display: flex;
+        margin-bottom: 21px;
+
+        &:first-child {
+            margin-top: 21px;
+
+            @media (max-width: 575px) {
+                margin-top: 0;
+            }
+        }
+
+        @media (max-width: 575px) {
+            flex-wrap: wrap;
+            margin-bottom: 0;
+        }
+    }
+
+    &__field {
+        margin-right: 22px;
+        flex-grow: 1;
+        max-width: calc((100% - 66px)/4);
+
+        @media (max-width: 575px) {
+            max-width: calc(50% - 4px);
+            width: calc(50% - 4px);
+            margin-right: 8px;
+            margin-bottom: 24px;
+
+            &:nth-child(even) {
+                margin-right: 0;
+            }
+        }
+
+        .MuiInputLabel-animated-43 {
+            white-space: nowrap;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &.MuiInputLabel-shrink-42 {
+                max-width: 125%;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

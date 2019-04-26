@@ -1,0 +1,36 @@
+.addressAutocomplete {
+    position: relative;
+    margin-top: 4px;
+    margin-left: -16px;
+    margin-right: -16px;
+  
+    &__pseudoSuggest {
+      position: absolute;
+      top: 32px;
+      padding: 8px 12px;
+      outline: none;
+      left: 0;
+      background: #EFF3F7;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .autoComplete__suggestionsContainerOpen {
+      font-size: 14px;
+      white-space: word-wrap;
+  //Тут может быть ошибка
+      & .addressAutocomplete__area {
+        font-size: 10px;
+        color: #999999;
+        margin-left: 10px;
+      }
+    }
+  
+    &__add {
+      transition: all 0.1s;
+  
+      &_active {
+        transform: rotate(45deg);
+      }
+    }
+  }

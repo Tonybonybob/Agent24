@@ -1,0 +1,96 @@
+.editLinePhone {
+    display: flex;
+
+    &__icons {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 7px;
+        text-align: center;
+        line-height: 28px;
+        box-sizing: border-box;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &_active {
+            svg {
+                path {
+                    fill: #fff !important;
+                }
+            }
+
+            &.editLinePhone {
+                &__viber {
+                    background-color: #665CAC;
+                    border-color: #665CAC;
+                }
+
+                &__telegram {
+                    background-color: #54a9eb;
+                    border-color: #54a9eb;
+                }
+
+                &__whatsapp {
+                    background-color: #25D366;
+                    border-color: #25D366;
+                }
+            }
+        }
+
+
+        svg {
+            width: 15px;
+            height: 15px;
+            padding: 0 !important;
+
+            rect {
+                stroke: transparent;
+            }
+        }
+    }
+
+    &__viber,
+    &__telegram,
+    &__whatsapp {
+        line-height: 32px;
+        border: 1px solid #E3E3E3;
+
+        svg {
+            width: 20px;
+            height: 20px;
+
+            path {
+                fill: #aaa;
+            }
+        }
+    }
+
+    &__delete {
+        margin: 0 17px;
+    }
+
+    .textField {
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 40px;
+            top: 18px;
+            width: 16px;
+            height: 35px;
+            background: #fff;
+        }
+    }
+
+    .radioGroup {
+        justify-content: center;
+
+        h5 {
+            display: none;
+        }
+    }
+}

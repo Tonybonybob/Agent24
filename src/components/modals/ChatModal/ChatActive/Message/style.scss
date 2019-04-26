@@ -1,0 +1,60 @@
+.chatMessage {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 8px;
+    flex-direction: row-reverse;
+
+    &__inner {
+        width: 244px;
+        background-color: #ECEFF1;
+        margin-left: auto;
+        padding: 11px 12px;
+        border-radius: 8px 8px 0 8px;
+    }
+
+    &-fromFriend {
+        flex-direction: row;
+
+        .chatMessage {
+            &__inner {
+                margin-left: unset;
+                border-radius: 8px 8px 8px 0px;
+            }
+
+            &__photo {
+                margin-right: 12px;
+                margin-left: unset;
+            }
+        }
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 12px;
+        color: #000;
+        word-wrap: break-word;
+    }
+
+    &__time {
+        float: right;
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.72);
+        position: relative;
+        bottom: -5px;
+        padding-left: 5px;
+    }
+
+    &__photo {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-left: 12px;
+    }
+
+    &__name {
+        font-size: 10px;
+        color: #0097A7;
+        font-weight: 600;
+        margin: 0;
+    }
+}

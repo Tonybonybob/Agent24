@@ -1,0 +1,71 @@
+// .nav
+//     &> input 
+//         width 100%
+//         box-sizing border-box
+//     background-color #0097A7
+//     &_search
+//         & ^[0]__items
+//             display none
+//     &__item
+//         position relative
+//         display flex
+//         align-items center
+//         box-sizing border-box
+//         padding 12px
+//         text-decoration none
+//         min-height 50px
+//         // border-bottom 1px solid rgba(#fff, 0.45)
+//         @media (min-width 1024px)
+//             width 60px
+//             height 60px
+//             justify-content center
+//             border-bottom 0
+//         &Icon
+//             width 18px
+//             height auto
+//             fill rgba(#fff, 0.45)
+//             margin-right 8px
+//             @media (min-width 1024px)
+//                 width 32px
+//                 margin 0
+//         &Description
+//             color rgba(#fff, 0.45)
+//         &:not(&_active):hover
+//             background-color darken(#0097A7, 10%)
+//         &_active
+//             cursor default
+//             & ^[0]__item
+//                 &Icon
+//                     fill #fff
+//                 &Description
+//                     color #fff
+//                     @media (min-width 1024px)
+//                         display none
+//                         color #000
+//         @media (min-width 1024px)
+//             &:not(&_active):hover &Description
+//                 display block
+//             &Description
+//                 display none
+//                 position absolute
+//                 white-space nowrap
+//                 background-color #fff
+//                 transition opacity 0.5s ease
+//                 font-size 12px
+//                 left 100%
+//                 z-index 1
+//                 padding 8px 12px
+//                 margin-left -4px
+//                 box-shadow 0 0 12px rgba(#000, 0.15)
+//                 border-radius 2px
+//                 color #000
+//                 &:before
+//                     content ''
+//                     position absolute
+//                     left -6px
+//                     margin-top 3px
+//                     width 0; 
+//                     height 0
+//                     border-top 6px solid transparent;
+//                     border-bottom 6px solid transparent;
+//                     border-right 6px solid #fff;

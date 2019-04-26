@@ -1,0 +1,83 @@
+@import "../../../styles/variables";
+
+.mainButton{ 
+  min-width: max-content;
+  border-radius: 2px;
+  text-transform :uppercase;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-family: 'Play';
+}
+.bigButton{ 
+  height: 48px;
+  padding: 0 32px;
+  font-size: 14px;
+}
+.mediumButton{
+  height: 32px;
+  padding: 0 16px;
+  font-size: 10px;
+  
+  &_moreThan{
+    height: 36px;
+    font-size: 14px;
+    text-transform: none;}
+}
+.smallButton {
+  padding: 8px;
+  font-size: 10px;
+}
+.fullButton{
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  }
+.longButton{
+  width :264px;
+  text-align: left;
+}
+.whiteButton{
+  color: rgba($colorTextPrimary, .48);
+  background-color: $colorWhite;
+  box-shadow: 0px 1px 1px rgba(12, 77, 84, 0.06);
+  }
+.primaryButton {
+  color: $colorWhite;
+  background-color: $colorPrimary;
+  box-shadow :0px 4px 12px rgba(0, 151, 167, 0.32);
+  font-family :'Play';
+}
+.secondaryButton {
+  color: $colorBlack;
+  background-color: $colorSecondary;
+  font-family: 'Play';
+}
+.addButton {
+  color: $colorPrimary;
+  background-color: transparent;
+  border: 1px solid rgba(0, 151, 167, 0.48);
+}
+.disabledButton .primaryButton{
+  font-weight: 500;
+  color: #AAAAAA;
+  background: transparent;
+  border: 1px solid #E3E3E3;
+  box-shadow: none;
+}
+.disabledButton .addButton{
+  font-weight: 600;
+}
+.disabledButton .secondaryButton {
+  color: $colorBlack;
+  background: #ECEFF1;
+}
+.blankButton{
+  background: transparent;
+}
+.noBorderButton, .disabledButton .noBorderButton{
+  border: none;
+}

@@ -1,0 +1,61 @@
+.servicesCard {
+    padding: 24px;
+    text-align: center;
+    display: flex;
+    background: #ffffff;
+    width: 222px;
+    box-sizing: border-box;
+    margin-right: 13px;
+    margin-bottom: 20px;
+    flex-direction: column;
+  
+    &__title {
+      margin-bottom: 16px;
+      margin-top: 0;
+      font-size: 22px;
+      color: #333333;
+    }
+  
+    &__text {
+      font-size: 12px;
+      color: #93a4ad;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  
+    &__priceWrapper {
+      margin-top: 24px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+  
+    &__more {
+      text-align: center;
+      margin-top: 4px;
+      font-size: 12px;
+      color: #15BEA0;
+      margin-bottom: 20px;
+    }
+  
+    &__price {
+      font-size: 32px;
+      color: #333333;
+    }
+  
+    &__date {
+      font-size: 12px;
+      color: #a5afa9;
+    }
+  
+    &__order {
+      margin-top: auto;
+      background: linear-gradient(270deg, rgba(0, 151, 167, 0.72) 0%, rgba(21, 190, 160, 0.72) 100%), #15BEA0;
+      border-radius: 2px;
+      color: #FFF;
+    }
+  
+    &__bottom {
+      margin-top: auto;
+    }
+  }
+  

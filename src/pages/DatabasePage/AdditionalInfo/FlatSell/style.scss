@@ -1,0 +1,29 @@
+.objectAdditional {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.objectInfoTable {
+    display: flex;
+
+    &__headers {
+        text-align: right;
+        width: 60px;
+        color: #999999;
+        margin-right: 16px;
+        align-items: space-between;
+    }
+
+    &__content {
+        font-weight: 500;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+    }
+
+    &__firstHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+}

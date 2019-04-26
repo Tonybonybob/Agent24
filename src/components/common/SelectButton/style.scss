@@ -1,0 +1,85 @@
+.selectButton {
+    cursor: pointer;
+  
+    &__CustomOption {
+      background-color: #fff;
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #121212;
+      padding: 14px 16px;
+      border-radius: 2px;
+      display: block;
+      text-decoration: none;
+  
+      &:hover {
+        background-color: #EFF3F7;
+      }
+    }
+  
+    &__menu {
+      @media (max-width: 575px) {
+        width: max-content !important;
+        right: 0 !important;
+        left: unset !important;
+      }
+    }
+  
+    &__indicators {
+      display: none !important;
+    }
+  
+    &__value {
+      &-container {
+        white-space: nowrap;
+      }
+    }
+  
+    & &__placeholder {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      width: calc(100% - 16px);
+      color: #121212;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+  
+      svg {
+        width: 8px;
+        margin-left: 8px;
+      }
+    }
+  
+    & &__control {
+      outline: 0;
+      box-shadow: none;
+      border: none;
+      background-color: #ECEFF1;
+      border-radius: 2px;
+      cursor: pointer;
+  
+      &--is-focused {
+        background-color: #FBC02D;
+        box-shadow: 0px 5px 16px rgba(40, 56, 49, 0.16);
+        border-radius: 0 0 2px 2px;
+  
+        .selectButton__placeholder {
+          svg {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  
+    &__menu {
+      margin: 0 !important;
+      top: unset !important;
+      bottom: 100%;
+  
+      &-list {
+        padding: 0 !important;
+      }
+    }
+  }
+  

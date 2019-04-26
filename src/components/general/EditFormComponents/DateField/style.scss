@@ -1,0 +1,11 @@
+.dateField {
+    label {
+        white-space: nowrap;
+    }
+
+    .select__underline {
+        >div {
+            padding-right: 0;
+        }
+    }
+}

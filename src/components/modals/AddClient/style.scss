@@ -1,0 +1,93 @@
+.addClient {
+    width: 488px;
+
+    @media (max-width: 488px) {
+        width: 100%;
+    }
+
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    box-sizing: border-box;
+
+    padding: 32px 40px;
+
+    &__headerText {
+        font-size: 24px;
+        margin: 0 0 32px 0;
+        line-height: 31px;
+    }
+
+    &__newClient {
+        font-size: 18px;
+        line-height: 23px;
+        display: inline-block;
+        margin: 0;
+        color: #27AE60;
+    }
+
+    &__field {
+        width: 196px;
+
+        &_marginB {
+            margin-bottom: 20px;
+        }
+
+        &_first {
+            margin-right: 16px;
+        }
+
+        &_number {
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+
+    &__fieldWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &_top {
+            align-items: flex-start;
+        }
+    }
+
+    &__number {
+        &_first {
+            width: 44px;
+            margin-right: 8px;
+        }
+
+        &_second {
+            flex-grow: 1;
+            overflow: hidden;
+        }
+    }
+
+    &__radio {
+        width: calc(50% + 8px);
+    }
+
+    &__buttons {
+        display: flex;
+        margin: 24px -40px -32px -40px;
+    }
+
+    &__button {
+        flex-grow: 1;
+    }
+
+    .disabledButton {
+        background: transparent;
+        border-top: 1px solid #E3E3E3;
+        color: #aaaaaa;
+
+        &:first-of-type {
+            border-right: 1px solid #E3E3E3;
+        }
+    }
+
+    #react-autowhatever-1 {
+        min-width: max-content;
+    }
+}

@@ -1,0 +1,17 @@
+.profileTariffs {
+
+    &__title {
+        font-size: 18px;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 16px;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        background: #FFF;
+        justify-content: space-around;
+        padding: 22px;
+    }
+}

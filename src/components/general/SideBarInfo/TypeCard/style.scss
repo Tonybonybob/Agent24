@@ -1,0 +1,62 @@
+.typeCard {
+	width: 160px;
+	height: 64px;
+	box-shadow: 0px 2px 8px rgba(0,0,0,0.16);
+	border-radius: 2px;
+	text-align: center;
+	overflow: hidden;
+	margin: -50px auto 16px;
+	z-index: 1;
+    position: relative;
+    &_gray {
+        background-color: #b2bec4;
+        svg {
+            path {
+                &:last-child {
+                    fill: #b2bec4;
+                }
+            }
+        }
+    }
+    &_orange {
+        background-color: #f2994a;
+        svg {
+            path {
+                &:last-child {
+                    fill: #f2994a;
+                }
+            }
+        }
+    }
+    &_green {
+        background-color: #27ae60;
+        svg {
+            path {
+                &:last-child {
+                    fill: #27ae60;
+                }
+            }
+        }
+    }
+    &__header {
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 16px;
+        margin-bottom: 4px;
+        svg {
+            transform: translateY(1px);
+            margin-right: 4px;
+            path {
+                fill: #fff;
+            }
+        }
+    }
+    &__subText {
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        margin: 0;
+    }
+    
+}

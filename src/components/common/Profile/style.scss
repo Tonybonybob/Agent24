@@ -1,0 +1,109 @@
+.profile {
+    width: 100%;
+    border-radius: 2px;
+    background-color: #fff;
+    padding: 12px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(#000, 0.15);
+    @media (min-width: 768px) {
+      padding: 20px;
+    }
+  
+    @media (min-width: #{$breakpoints_lg}) {
+      flex-direction: column;
+    }
+  
+    &__image {
+      &Wrapper {
+        @media (min-width: #{$breakpoints_sm}) {
+          width: 136px;
+          flex-basis: 136px;
+          flex-grow: 0;
+        }
+  
+        @media (min-width: #{$breakpoints_md}) {
+          width: 144px;
+          flex-basis: 144px;
+        }
+  
+        @media (min-width: #{$breakpoints_lg}) {
+          width: 100%;
+          max-width: 100%;
+          flex-basis: 100%;
+          flex-grow: 0;
+        }
+      }
+  
+      box-sizing: border-box;
+      padding: 50%;
+      background-size: cover;
+      background-position: center;
+      border-radius: 2px;
+  
+      @media (min-width: #{$breakpoints_lg}) {
+        width: 200px;
+        height: 200px;
+        margin-left: -20px;
+        margin-top: -20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+  
+    &__join {
+      margin-top: 8px;
+      font-size: 10px;
+      color: #999;
+    }
+  
+    &__name {
+      font-size: 14px;
+      font-weight: 500;
+  
+      @media (min-width: #{$breakpoints_lg}) {
+        margin-top: 20px;
+      }
+    }
+  
+    &__rieltorStatus {
+      margin-top: 8px;
+      font-size: 12px;
+      color: #999;
+      margin-bottom: 12px;
+    }
+  
+    &__infoItem {
+      font-size: 12px;
+      margin-top: 8px;
+  
+      &_phone {
+        white-space: nowrap;
+      }
+    }
+  
+    &__phone {
+      text-decoration: underline;
+      color: #000;
+      text-decoration-style: dotted;
+    }
+  
+    &__sourceLabel {
+      font-style: italic;
+    }
+  
+    &__systemInfo {
+      @media (min-width: #{$breakpoints_sm}) {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 55.5%;
+        width: 55.5%;
+        max-width: 55.5%;
+      }
+  
+      @media (min-width: #{$breakpoints_lg}) {
+        flex-basis: 100%;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }

@@ -1,0 +1,117 @@
+.areaSelect {
+	flex-grow: 1;
+	margin: 21px 0;
+
+	&__line {
+		display: flex;
+		position: relative;
+
+		&::before, &::after {
+			position: absolute;
+			content: '';
+			left: 0;
+			right: 0;
+			z-index: 1;
+		}
+
+		&::before {
+			border-bottom: 2px solid #fff;
+			bottom: 0px;
+		}
+
+		&::after {
+			border-bottom: 1px solid #d5d5d5;
+			bottom: -1px;
+		}
+
+		@media (max-width: 575px) {
+			flex-wrap: wrap;
+
+			&:before, &:after {
+				display: none;
+			}
+		}
+	}
+
+	&__field {
+		max-width: 25%;
+		margin-right: 16px;
+		min-width: max-content;
+
+		@media (max-width: 575px) {
+			max-width: 100%;
+			width: 100%;
+			margin-bottom: 35px;
+			margin-right: 0;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.resizeInput {
+				width: 100%;
+
+				input {
+					width: 100% !important;
+				}
+			}
+		}
+
+		.autoComplete {
+			// position static
+			#react-autowhatever-1 {
+				width: max-content;
+
+				@media (max-width: 575px) {
+					width: 100%;
+				}
+			}
+
+			.resizeInput {
+				&Holder {
+					position: relative;
+				}
+
+				input {
+					font-size: 16px;
+					color: #000;
+					border-top: none;
+					border-left: none;
+					border-right: none;
+					border-bottom: 2px solid #d5d5d5;
+					padding-bottom: 8px;
+					position: relative;
+					transition: border-color 0.2s;
+					min-width: 50px;
+
+					&:focus, &:hover {
+						z-index: 2;
+						outline: none;
+						border-color: #0097A7;
+					}
+				}
+
+				&_error {
+					input {
+						border-color: #f44336;
+						z-index: 2;
+						min-width: 78px;
+
+						&:focus, &:hover {
+							border-color: #f44336;
+						}
+					}
+				}
+
+				&__errorText {
+					position: absolute;
+					bottom: -20px;
+					left: 0;
+					color: #f44336;
+					font-size: 0.75rem;
+					font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+				}
+			}
+		}
+	}
+}

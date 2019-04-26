@@ -1,0 +1,234 @@
+.landingPresentation {
+    background: rgba(255, 246, 198, 0.6);
+    position: relative;
+    min-height: 100vh;
+  
+    @media (min-width: 1024px) {
+      &::after {
+        position: absolute;
+        top: 0;
+        content: '';
+        bottom: 0;
+        right: 0;
+        background: #ffffff;
+        width: 24%;
+        z-index: 2;
+      }
+    }
+  
+    @media (max-width: 1023px) {
+      min-height: unset;
+    }
+  
+    .react-swipeable-view-container {
+      width: 100%;
+    }
+  
+    .container {
+      padding-top: 0;
+  
+      @media (min-width: 1024px) {
+        padding-right: 0;
+        padding-bottom: 0;
+      }
+    }
+  
+    .row {
+      margin-right: unset;
+    }
+  
+    &__triangle {
+      position: absolute;
+      top: 50%;
+      left: 9px;
+      z-index: 6;
+      cursor: pointer;
+  
+      @media (max-width: 1023px) {
+        display: none;
+      }
+  
+      &_right {
+        left: unset;
+        right: 21px;
+      }
+    }
+  
+    &__title {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 32px;
+      letter-spacing: 0.02em;
+      color: #333333;
+      max-width: 430px;
+      font-weight: 700;
+  
+      @media (max-width: 1023px) {
+        padding-left: 14px;
+        margin: 32px auto 48px auto;
+        padding-right: 14px;
+        text-align: center;
+      }
+    }
+  
+    &__sidebar {
+      position: relative;
+  
+      @media (max-width: 1023px) {
+        background: unset;
+        text-align: center;
+        height: unset;
+      }
+  
+      @media (min-width: 1024px) {
+        min-height: 620px;
+      }
+  
+      @media (min-width: 1280px) {
+        min-height: 710px;
+      }
+  
+      @media (min-width: 1440px) {
+        min-height: 850px;
+      }
+  
+      @media (min-width: 1441px) {
+        margin-left: 3px;
+        margin-right: -3px;
+      }
+    }
+  
+    &__photo {
+      margin: 32px;
+      margin-top: 64px;
+      margin-left: -120%;
+      z-index: 3;
+  
+      @media (max-width: 1023px) {
+        margin-top: unset;
+        position: unset;
+        margin-left: unset !important;
+        margin-bottom: 40px;
+        max-height: unset;
+        right: unset;
+        max-width: 100%;
+      }
+  
+      @media (min-width: 1024px) {
+        opacity: 0;
+        transition: opacity 0.2s;
+        position: absolute;
+      }
+  
+      &_active {
+        opacity: 1 !important;
+      }
+  
+      &_0 {
+        margin-left: -130%;
+  
+        @media (min-width: 1024px) {
+          margin-top: 64px;
+          width: 500px;
+        }
+  
+        @media (min-width: 1280px) {
+          margin-top: 30px;
+          width: 597px;
+        }
+  
+        @media (min-width: 1440px) {
+          width: 639px;
+        }
+      }
+  
+      &_1 {
+        box-shadow: 0px 16px 40px rgba(43, 7, 7, 0.06);
+  
+        @media (min-width: 1024px) {
+          width: 418px;
+          margin-top: 64px;
+        }
+  
+        @media (min-width: 1280px) {
+          width: 520px;
+          margin-top: 64px;
+        }
+  
+        @media (min-width: 1440px) {
+          width: 635px;
+        }
+      }
+  
+      &_2 {
+        box-shadow: 0px 16px 40px rgba(43, 7, 7, 0.06);
+        margin-left: -40%;
+  
+        @media (min-width: 1024px) {
+          width: 235px;
+        }
+  
+        @media (min-width: 1440px) {
+          width: 286px;
+        }
+      }
+    }
+  
+    &__content {
+      padding: 64px 0 0 0;
+  
+      @media (max-width: 1023px) {
+        padding: 0;
+      }
+  
+      > div {
+        display: flex;
+        overflow: hidden;
+  
+        svg {
+          margin-top: 48px;
+          margin-bottom: 32px;
+  
+          @media (max-width: 1023px) {
+            margin-left: auto;
+            margin-top: 0;
+            margin-right: auto;
+          }
+        }
+      }
+  
+      .dotNav {
+        width: max-content;
+        margin: 48px 0;
+        display: flex;
+        justify-content: center;
+  
+        @media (max-width: 1023px) {
+          margin-left: auto;
+          margin-right: auto;
+        }
+  
+        @media (min-width: 1024px) {
+          margin-top: 16px;
+        }
+  
+        @media (min-width: 1440px) {
+          margin-top: 80px;
+        }
+  
+        &__container {
+          margin-right: 16px;
+  
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+  
+        &__item {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+  

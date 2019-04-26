@@ -1,0 +1,21 @@
+.calendarAndTime {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 35px;
+
+    .calendar-picker {
+        max-width: 100px;
+    }
+
+    .autoComplete {
+        max-width: 59px;
+
+        &__suggestionsContainerOpen {
+            width: max-content;
+        }
+    }
+
+    input {
+        font-size: 14px !important;
+    }
+}

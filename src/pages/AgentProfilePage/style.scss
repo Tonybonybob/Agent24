@@ -1,0 +1,63 @@
+.agentProfile {
+    display: flex;
+    margin-top: 20px;
+  
+    &__sidebar {
+      width: 200px;
+      margin-right: 16px;
+      background: #FFF;
+    }
+  
+    &__content {
+      flex-grow: 1;
+    }
+  
+    &__tabsWrapper {
+      border-bottom: 1px solid #d0d8dc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+  
+      .tabs {
+        &__container {
+          border-bottom: none;
+        }
+  
+        &__label {
+          font-size: 14px !important;
+        }
+      }
+    }
+  
+    &__addButton {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: #27ae60;
+      font-weight: 700;
+      border-color: rgba(39, 174, 96, 0.48);
+  
+      svg path {
+        fill: rgba(39, 174, 96, 0.48);
+      }
+    }
+  
+    &__table {
+      margin-bottom: 24px;
+    }
+  
+    &__upgrade {
+      margin-bottom: 24px;
+    }
+  
+    &__services {
+      margin-bottom: 24px;
+    }
+  
+    &__block {
+      background: #ffffff;
+      box-shadow: 0 1px 1px rgba(12, 77, 84, 0.06);
+      border-radius: 2px;
+    }
+  }

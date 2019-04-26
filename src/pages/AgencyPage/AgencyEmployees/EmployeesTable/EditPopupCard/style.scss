@@ -1,0 +1,18 @@
+.editPopupCard {
+    width: max-content;
+    padding: 20px 0;
+    background: #fff;
+    box-shadow: 0px 5px 16px rgba(40, 56, 49, 0.16);
+    border: 1px solid rgba(33, 64, 95, 0.24);
+    z-index: 3;
+  
+    &__item {
+      padding: 6px 28px;
+      font-size: 14px;
+      transition: background 0.2s;
+  
+      &:hover {
+        background: #eaeaea;
+      }
+    }
+  }

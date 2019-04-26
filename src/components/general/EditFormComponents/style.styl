@@ -1,0 +1,58 @@
+.cropDropBox
+  margin-right 20px
+
+
+.editLine
+  display flex
+  &_cityWithBirthday
+    align-items baseline
+    .autoComplete
+      margin-right 20px
+      max-width: 30%
+      &__suggestionsContainerOpen
+        width max-content
+    .select
+      margin-right 20px
+      &:nth-last-child(2)
+        min-width 105px
+      &:last-child
+        margin-right 0
+      &__underline
+        text-transform capitalize
+      label
+        width max-content
+  &_realtorLine
+    align-items baseline
+    margin-top 15px
+    .select
+      width 132px
+      margin-left 20%
+    .autoComplete
+      max-width 284px
+      margin-right calc(10% - 40px)
+      margin-left auto
+  &_emailWithSource
+    margin-top 15px
+    .textField
+      width 208px
+    .select
+      width 132px
+  &_fullName
+    .textField
+      flex-grow 1
+      max-width 30%
+  &_wrap
+    flex-wrap wrap
+  &__placeholder
+    visibility hidden
+    pointer-events none
+
+  &.editLine_socials, &.editLine_phones
+    display block
+
+  .textField
+
+    margin-right 20px
+    &:last-child
+      margin-right 0
+

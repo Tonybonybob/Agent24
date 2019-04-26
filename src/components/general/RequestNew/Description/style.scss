@@ -1,0 +1,366 @@
+@import '../../../../styles/variables';
+
+.newRequestDesc {
+    &__line {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 24px;
+
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
+
+        &_checks {
+            flex-wrap: wrap;
+            margin-bottom: 18p;
+
+            .newRequestDesc__field {
+                flex-shrink: 1;
+                width: max-content;
+                flex-grow: 0;
+            }
+        }
+
+        &_toBottom {
+            align-items: flex-end;
+        }
+    }
+
+    &__subField {
+        min-width: 0;
+        flex-grow: 1;
+
+        .textField {
+            .textField__input {
+                margin-bottom: 0;
+            }
+        }
+
+        input {
+            text-align: center;
+
+            &:placeholder {
+                color: rgba(0, 0, 0, 0.54);
+            }
+        }
+
+        &:first-child {
+            input {
+                text-align: left;
+            }
+        }
+    }
+
+    &__subDivider {
+        padding: 0 5px;
+        height: 26px;
+        border-bottom: 1px solid #d5d5d5;
+    }
+
+    &__tooltipBefore {
+        margin-right: 4px;
+    }
+
+    &__field {
+        padding-right: 20px;
+        flex-grow: 1;
+        box-sizing: border-box;
+        min-width: 0;
+        flex-shrink: 0;
+
+        .textField {
+            .textField__container {
+                &>label {
+                    white-space: nowrap;
+                }
+            }
+
+            .textField__input {
+                @media (max-width: 575px) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &_city,
+        &_area {
+            padding-bottom: 14px;
+
+            @media (max-width: 575px) {
+                margin-bottom: 24px;
+                float: left;
+                width: 100%;
+            }
+        }
+
+        &_area {
+            @media (max-width: 575px) {
+                margin-bottom: 0;
+            }
+        }
+
+        &-checkbox {
+            margin-bottom: -10px;
+            flex-grow: 0;
+        }
+
+        @media (max-width: 575px) {
+            padding-right: 0;
+        }
+
+        &-infoblock {
+            width: calc(50% - 10px);
+            margin-right: 20px;
+            padding-right: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+
+            @media (max-width: 575px) {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 24px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            label {
+                font-style: normal;
+                font-weight: normal;
+                line-height: normal;
+                font-size: 12px;
+                color: rgba($colorBlack, .48);
+                margin-bottom: 6px;
+            }
+
+            .infoblock {
+                font-style: normal;
+                font-weight: normal;
+                line-height: normal;
+                font-size: 16px;
+                color: $colorBlack;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &-street {
+            width: 50%;
+            max-width: 50%;
+            flex-basis: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: baseline;
+
+            @media (max-width: 767px) {
+                min-width: 100%;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                padding-right: 0;
+
+                .tooltip {
+                    display: none;
+                }
+            }
+        }
+
+        &-house,
+        &-housing,
+        &-apartment {
+            max-width: 25%;
+            box-sizing: content-box;
+            flex-shrink: 1;
+
+            @media (max-width: 767px) {
+                max-width: calc((100% / 3) - 5.4px);
+                width: calc((100% / 3) - 5.4px);
+                margin-right: 8px;
+                padding-right: 0;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &-house {
+            @media (max-width: 575px) {
+                max-width: 33%;
+            }
+        }
+
+        &-housing {
+            @media (max-width: 575px) {
+                max-width: 33%;
+            }
+        }
+
+        &-apartment {
+            min-width: 72px;
+
+            @media (max-width: 575px) {
+                max-width: 33%;
+            }
+        }
+
+        &-scheme {
+            max-width: 23%;
+            flex-basis: 23%;
+
+            @media (max-width: 575px) {
+                max-width: 100%;
+                width: 100%;
+                flex-basis: 100%;
+                margin-bottom: 24px;
+            }
+        }
+
+        &-condition {
+            max-width: 23%;
+            flex-basis: 23%;
+
+            @media (max-width: 575px) {
+                max-width: 50%;
+                flex-basis: 50%;
+                padding-right: 8px;
+            }
+        }
+
+        &-room {
+            max-width: 30%;
+            flex-basis: 30%;
+
+            @media (max-width: 575px) {
+                max-width: 50%;
+                padding-right: 8px;
+                margin-bottom: 0;
+                box-sizing: border-box;
+
+                .MuiSelect-select-50 {
+                    padding-right: 20px;
+                }
+            }
+        }
+
+        &-description,
+        &-price {
+            .textField {
+                .textField__input {
+                    margin-bottom: 0;
+                }
+            }
+
+            @media (max-width: 575px) {
+                padding-right: 0 !important;
+            }
+        }
+
+        &-wallMaterial {
+            max-width: 30%;
+            flex-basis: 30%;
+
+            @media (max-width: 575px) {
+                max-width: 50%;
+                flex-basis: 50%;
+            }
+        }
+
+        &-status {
+            max-width: 30%;
+            padding-right: 22px !important;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+
+            @media (max-width: 575px) {
+                max-width: unset;
+                width: 100%;
+                padding-right: 22px !important;
+            }
+        }
+
+        &_owner {
+            margin-bottom: 20px;
+            max-width: 27%;
+
+            @media (max-width: 575px) {
+                padding-right: 22px !important;
+                max-width: unset;
+                width: 100%;
+            }
+        }
+
+        &-price {
+            max-width: 114px;
+
+            @media (max-width: 575px) {
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        &_ownerName {
+            max-width: 27%;
+
+            @media (max-width: 575px) {
+                max-width: unset;
+                padding-right: 22px !important;
+            }
+        }
+
+        &_ownerPhone {
+            max-width: 27%;
+
+            @media (min-width: 1400px) {
+                max-width: 23%;
+            }
+
+            @media (max-width: 575px) {
+                max-width: unset;
+            }
+        }
+
+        &-withSub {
+            display: flex;
+            align-items: baseline;
+        }
+
+        &-floors {
+            max-width: 27%;
+
+            &-min {
+                max-width: 13%;
+            }
+
+            @media (max-width: 575px) {
+                max-width: 50%;
+            }
+        }
+
+        &-technicalFloor {
+            @media (max-width: 575px) {
+                padding-left: 0;
+                margin-top: 14px;
+                margin-bottom: -14px;
+            }
+        }
+
+        &-squares {
+            flex-shrink: 1;
+            margin-top: 0;
+
+            @media (max-width: 575px) {
+                max-width: 100%;
+                margin-top: 24px;
+            }
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+
+}

@@ -1,0 +1,240 @@
+.database {
+    display: flex;
+  
+    .table__cell {
+      box-sizing: border-box;
+      height: 59px;
+  
+      &_header {
+        height: 40px;
+      }
+    }
+  
+    &__centerCell {
+      text-align: center;
+    }
+  
+    &TableWrapper {
+      margin-top: 16px;
+    }
+  
+    &__content {
+      margin-top: 16px;
+      flex: 1 0 100%;
+  
+      @media (max-width: 767px) {
+        margin-top: 8px;
+        overflow: overlay;
+      }
+  
+      @media (min-width: 1280px) {
+        flex-shrink: 1;
+  
+        &_active {
+          position: relative;
+  
+          .cardsList {
+            position: absolute;
+            box-sizing: border-box;
+            width: 100%;
+          }
+        }
+      }
+    }
+  
+    &__filters {
+      flex: 0 0 0;
+      height: 0;
+      transition: all 0.15s ease-out;
+      white-space: nowrap;
+      overflow: hidden;
+  
+      @media (max-width: 767px) {
+        margin-top: 8px;
+      }
+  
+      &_active {
+        flex-basis: 200px;
+        margin-right: 20px;
+        height: auto;
+  
+        @media (max-width: 1023px) {
+          margin-right: 8px;
+        }
+      }
+  
+      &_whiteSpaceNormal {
+        white-space: normal;
+      }
+    }
+  }
+  
+  .databaseButtons {
+    display: flex;
+    margin-top: 20px;
+  
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+      margin-top: 0;
+    }
+  
+    &__filters {
+      height: 100%;
+  
+      span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+  
+      @media (max-width: 767px) {
+        display: flex;
+        align-items: center;
+      }
+    }
+  
+    &__general {
+      flex-grow: 1;
+  
+      @media (min-width: 768px) {
+        display: flex;
+      }
+    }
+  
+    &__description {
+      flex: 0 0 200px;
+    }
+  
+    &__item {
+      margin-right: 20px;
+      font-family: 'Play', sans-serif;
+  
+      .generalFilters__mls {
+        margin-bottom: 0;
+      }
+  
+      &.cityAutocomplete {
+        min-width: 220px;
+      }
+  
+      @media (max-width: 1180px) {
+        margin-right: 16px;
+      }
+  
+      @media (max-width: 1023px) {
+        margin-right: 8px;
+  
+        &.cityAutocomplete {
+          min-width: 120px;
+        }
+      }
+  
+      @media (min-width: 768px) {
+        display: inline-block;
+        min-width: 130px;
+        max-width: 250px;
+      }
+  
+      @media (max-width: 767px) {
+        margin-bottom: 8px;
+        margin-right: 8px;
+  
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  
+    &__number {
+      font-size: 9px;
+      display: inline-block;
+      min-width: 16px;
+      box-sizing: border-box;
+      vertical-align: middle;
+      padding: 2px;
+      background: #FFF;
+      margin-left: 5px;
+      border: 1px solid #0097A7;
+      border-radius: 50%;
+      color: #0097A7;
+    }
+  
+    & &__openFilters {
+      padding: 0 8px 0 12px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.15s;
+      font-size: 14px;
+      font-weight: bold;
+      color: black;
+      border-radius: 2px;
+      border: none;
+      outline: none;
+      justify-content: space-between;
+      background: #FFF;
+      width: 200px;
+      height: 36px;
+  
+      @media (max-width: 1023px) {
+        font-size: 13px;
+      }
+  
+      @media (max-width: 767px) {
+        margin-top: 0;
+      }
+  
+      &Container {
+        @media (max-width: 767px) {
+          background: rgba(255, 255, 255, 0.54);
+        }
+      }
+  
+      @media (max-width: 767px) {
+        width: auto;
+        margin-bottom: 0;
+        flex-grow: 1;
+      }
+  
+      &_active {
+        & .databaseButtons__filtersArrow {
+          svg {
+            transform: rotate(180deg);
+            fill: #FFF;
+          }
+        }
+  
+        background: #0097A7;
+        color: #FFF;
+      }
+    }
+  
+    &__filtersArrow {
+      padding-left: 8px;
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      border-left: 1px solid rgba(208, 216, 220, 0.48);
+      height: 36px;
+      display: flex;
+      align-items: center;
+      transition: all 0.15s;
+  
+      svg {
+        fill: #0097A7;
+        opacity: 0.54;
+      }
+    }
+  }
+  
+  .filtersShowMore {
+    font-size: 12px;
+    color: #0097A7;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-left: 8px;
+  
+    &__text {
+      margin-right: 4px;
+    }
+  }

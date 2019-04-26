@@ -1,0 +1,11 @@
+.pureTextFieldPlane {
+    [class*="MuiInputAdornment"] {
+        margin-right: 8px;
+    }
+}
+
+.pureTextFieldPlane input {
+    margin-left: 13px;
+    margin-bottom: 2px;
+    font-size: 14px;
+}

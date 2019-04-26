@@ -1,0 +1,33 @@
+.flatBuyParametrs {
+    &__row {
+        align-items: baseline;
+        label {
+            white-space: nowrap;
+        }
+        .checkbox {
+            white-space: unset;
+        }
+    }
+    &__item {
+        position: relative;
+        background: #f7f9fb;
+        padding: 24px 22px;
+        margin-bottom: 16px;
+        @media (min-width: 1024px) {
+            margin-left: -22px;
+            margin-right: -22px;
+        }
+        &_preview {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__close {
+        position: absolute;
+        padding: 10px;
+        right: 12px;
+        top: 12px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,47 @@
+.hamburger{
+  width: 18px;
+  height: 12px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .3s ease-in-out;
+  cursor: pointer;
+    &__item{
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: #858585;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .15s ease-in-out;
+        transform-origin: left center;
+        top: 5px;
+        &_first {
+            top: 0px;
+        }
+        &_last {
+            top: 10px;
+        }
+    }
+    &_open &{
+        &__item{
+        &_first{
+                transform: rotate(45deg);
+                top: -2px;
+                left: 1px;
+            }
+        &_middle{
+            width: 0%;
+            opacity: 0;
+        }
+      
+        &_last{
+            transform: rotate(-45deg);
+            top: 11px;
+            left: 1px;
+        }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.phoneTextField{
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    background: #fff;
+    left: 42px;
+    top:22px;
+    width: 14px;
+    height: 30px;
+}
+}
+  

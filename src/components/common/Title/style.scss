@@ -1,0 +1,46 @@
+@import '../../../styles/variables';
+.title {
+    text-align: center;
+
+    &_left {
+        text-align: left;
+    }
+
+    &__tag {
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #F2994A;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        color: #333;
+
+        @media (min-width: $breakpoints_sm) {
+            font-size: 28px;
+        }
+
+        @media (min-width: $breakpoints_md) {
+            font-size: 32px;
+        }
+    }
+
+    &__description {
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: 300;
+        color: #8C8883;
+
+        @media (min-width: $breakpoints_sm) {
+            font-size: 22px;
+        }
+
+        @media (min-width: $breakpoints_md) {
+            font-size: 24px;
+        }
+    }
+}

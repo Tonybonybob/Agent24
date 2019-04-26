@@ -1,0 +1,31 @@
+.select {
+    & &__container {
+        width: 100%;
+
+        >div {
+            &:hover::before {
+                border-bottom-color: #0097A7 !important;
+            }
+
+            &::after {
+                border-bottom-color: #0097A7;
+            }
+        }
+    }
+
+    & &__error {
+        color: green;
+    }
+
+    & &__underline {
+        border-bottom: 1px solid #d5d5d5;
+
+        svg {
+            color: #d5d5d5;
+        }
+
+        &:hover {
+            border-color: transparent;
+        }
+    }
+}

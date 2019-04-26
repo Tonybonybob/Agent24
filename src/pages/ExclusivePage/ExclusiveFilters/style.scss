@@ -1,0 +1,10 @@
+.exclusiveFilters {
+    .radioFilters {
+      display: inline-flex;
+      margin-right: 17px;
+  
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }

@@ -1,0 +1,97 @@
+@import '../../../../../../styles/variables';
+
+.landingClientRequestFeature {
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 32px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(#000, 0.05);
+    cursor: pointer;
+  
+    &_active {
+      align-items: flex-start;
+      padding-top: 20px;
+  
+      .landingClientRequestFeature__title {
+        margin-top: 4px;
+      }
+  
+      z-index: 1;
+      box-shadow: 0 16px 32px rgba(#000, 0.1);
+  
+      @media (min-width: #{$breakpoints_lg}) {
+        & .landingClientRequestFeature{
+          &__number {
+            color: #0097a7;
+          }
+  
+          &__title {
+            color: #333;
+          }
+  
+          &__description {
+            max-height: 1000px;
+            margin-top: 12px;
+            transition: max-height 2s;
+          }
+        }
+      }
+    }
+  
+    &__number {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 0;
+      margin-right: 24px;
+      font-size: 28px;
+      font-weight: 700;
+      color: #0097a7;
+  
+      @media (min-width: #{$breakpoints_lg}) {
+        color: #a5a5a5;
+      }
+    }
+  
+    &__title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #333;
+  
+      @media (min-width: #{$breakpoints_lg}) {
+        color: #8c8883;
+      }
+    }
+  
+    &__description {
+      font-size: 14px;
+      color: #333;
+  
+      @media (min-width: #{$breakpoints_lg}) {
+        max-height: 0px;
+        overflow: hidden;
+      }
+  
+      @media (max-width: 1023px) {
+        margin-top: 12px;
+      }
+    }
+  
+    &__progressBar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #0097a7;
+      transition: width 0.2s ease;
+  
+      @media (min-width: #{$breakpoints_lg}) {
+        top: initial;
+        bottom: 0;
+      }
+    }
+  }

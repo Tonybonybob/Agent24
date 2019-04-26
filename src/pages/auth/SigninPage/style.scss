@@ -1,0 +1,84 @@
+.authForm {
+    text-align: center;
+  
+    .authInput_number {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .authInput {
+      margin-bottom: 8px;
+  
+    //   &Adornment__number {
+    //     ml10;
+    //   }
+  
+      input {
+        font-size: 24px;
+  
+        &[type='password'] {
+          font-size: 32px;
+          letter-spacing: 0.14em;
+        }
+      }
+  
+      label {
+        font-size: 18px;
+      }
+  
+      .input_pristine.input_labelAnimated:not(.input_active) .input__label {
+        font-size: 24px;
+        top: 36px;
+      }
+    }
+  
+    .primaryButton {
+      margin-top: 36px;
+      width: 280px;
+      background: linear-gradient(270deg, rgba(0, 151, 167, 0.72) 0%, rgba(21, 190, 160, 0.72) 100%), #15BEA0;
+    }
+  
+    .disabledButton {
+      background: linear-gradient(0deg, #D0D8DC, #D0D8DC);
+      box-shadow: none;
+  
+      @media (max-width: 340px) {
+        width: 280px;
+      }
+    }
+  
+    &__errorMessage {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #EB5757;
+    }
+  
+    &__title {
+      font-weight: bold;
+      font-size: 32px;
+      color: #333333;
+      letter-spacing: 0.03em;
+      margin-bottom: 72px;
+  
+      &_recovery {
+        margin-bottom: 12px;
+      }
+    }
+  
+    &__subTitle {
+      max-width: 420px;
+      font-weight: 300;
+      font-size: 24px;
+      letter-spacing: 0.03em;
+      color: #8c8883;
+      margin-bottom: 32px;
+    }
+  
+    &__additionalAction {
+      font-size: 20px;
+      font-weight: 600;
+      color: #15bea0;
+      display: block;
+      margin-top: 32px;
+    }
+  }

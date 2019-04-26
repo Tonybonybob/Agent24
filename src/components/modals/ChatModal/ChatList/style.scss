@@ -1,0 +1,72 @@
+.chatList {
+    width: 240px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+
+    &__tabs {
+
+        .tabs__container {
+            padding: 0 20px;
+        }
+    }
+
+    &__chats {
+        padding: 0;
+        margin: 0;
+
+        .chatListItem {
+            display: flex;
+            padding: 10px 12px 10px 7px;
+            transition: all 0.1s;
+            height: 60px;
+            box-sizing: border-box;
+
+            &:hover {
+                background-color: #EFF3F7;
+            }
+
+            &__avatar img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-left: 13px;
+                margin-right: 8px;
+                flex-shrink: 0;
+            }
+
+            &__content {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            &__name {
+                margin: 0;
+                font-size: 14px;
+                color: #101010;
+            }
+
+            &__message {
+                color: #454545;
+                font-size: 12px;
+            }
+
+            &__time {
+                color: #999;
+                font-size: 10px;
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+    }
+
+    &__footer {
+        padding: 10px 20px 20px;
+
+        button {
+            width: 100%;
+        }
+    }
+}

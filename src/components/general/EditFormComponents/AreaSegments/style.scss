@@ -1,0 +1,55 @@
+.areaSegments {
+    background: #F7F9FB;
+
+    &__edit {
+        padding: 44px 20px 0;
+
+        .areaSegmentsSegment {
+            display: flex;
+
+            &__add {
+                margin: 0 20px 28px;
+            }
+
+            &__delete {
+                margin: 0 0 28px 20px;
+            }
+
+            svg {
+                padding: 5px;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 20px 20px;
+    }
+
+    &__selects {
+        display: flex;
+
+        .select {
+            margin-right: 20px;
+            margin-bottom: 28px;
+            width: 130px;
+        }
+    }
+
+    .closeWrapper {
+        svg{ 
+            transform: rotate(180deg);
+        }
+    }
+
+    .table {
+        &__cell {
+            vertical-align: top;
+
+            &>div {
+                margin-bottom: 6px;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.map-holder {
+    position: relative ;
+    &__buttonsWrapper {
+        position: absolute; 
+        top: 26px;
+        left: 16px;
+    }
+
+    &.map-holder_add-marker:hover {
+
+        cursor: url('../../../../assets/googleMarker.png'), cell;
+        * {
+            cursor: url('../../../../assets/googleMarker.png'), cell;
+        }
+    }
+}

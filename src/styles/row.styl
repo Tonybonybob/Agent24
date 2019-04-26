@@ -1,0 +1,51 @@
+// generate-columns(columns, screen = false)
+//   for n in 1..columns
+//     modifier = screen ? screen + n : n
+//     width = (n/columns)*100%
+//     &_{modifier}
+//       flex-grow 0
+//       flex-basis width
+//       max-width width
+//   for n in 0..columns
+//     modifier = screen ? screen + n : n
+//     width = (n/columns)*100%
+//     &_mr{modifier}
+//       margin-right width
+//     &_ml{modifier}
+//       margin-left width
+//     &_order{modifier}
+//       order: n
+
+// .row
+//   display flex
+//   flex-wrap wrap
+//   margin-left -6px
+//   margin-right -6px
+//   @media (min-width breakpoints.md)
+//     margin-left -10px
+//     margin-right -10px
+//   &__col
+//     flex-grow 1
+//     flex-basis 0
+//     width 100%
+//     max-width 100%
+//     padding-left 6px
+//     padding-right 6px
+//     box-sizing border-box
+//     @media (min-width breakpoints.md)
+//       padding-left 10px
+//       padding-right 10px
+//     generate-columns(12)
+//     for screen, width in breakpoints
+//       @media (min-width width)
+//         generate-columns(12, screen)
+//         &_{screen}auto
+//           flex-grow 1
+//           flex-basis 0
+//           width 100%
+//     for screen, width in breakpoints
+//       @media (min-width width)
+//         &_sidebar{screen}
+//           flex-grow 0
+//           flex-basis 220px
+//           width 220px

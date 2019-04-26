@@ -1,0 +1,19 @@
+.select {
+    & &__container {
+        width: 100%;
+
+        >div {
+            &:hover::before {
+                border-bottom-color: #0097A7 !important;
+            }
+
+            &::after {
+                border-bottom-color: #0097A7;
+            }
+        }
+    }
+
+    & &__error {
+        color: green;
+    }
+}

@@ -1,0 +1,339 @@
+// %fullWidth {
+//     max-width: 100%;
+//     width: 100%;
+//     flex-basis: 100%;
+// }
+
+.clientSellInfo {
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    background: #fff;
+    padding: 22px 22px 0;
+    // box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    position: relative;
+    cursor: context-menu;
+    box-shadow: 0px 4px 24px rgba(40, 56, 49, 0.16);
+
+    @media (max-width: 768px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        background: #E5E5E5;
+        padding: 0;
+        display: block;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    &__section {
+        width: calc(50% - 10px);
+        flex-basis: calc(50% - 10px);
+        margin-bottom: 22px;
+
+        &:nth-child(odd) {
+            margin-right: 20px;
+        }
+
+        .tabs {
+            margin-bottom: 16px;
+        }
+    }
+
+    &_comments {
+        display: flex;
+        flex-direction: column;
+        max-width: 450px;
+
+        .objectInfoMessages__tabs {
+            flex-grow: 1;
+        }
+
+        &>button {
+            flex-shrink: 0;
+            height: 32px;
+            margin-top: 12px;
+        }
+    }
+
+    &_addInfo {
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 370px;
+            max-width: 100%;
+            width: 100%;
+            flex-basis: 100%;
+        }
+
+        .d-flex {
+            margin-bottom: auto;
+        }
+
+        p {
+            margin: 0 0 0 12px;
+            font-size: 12px;
+            word-break: break-word;
+        }
+
+        .comments {
+            &__holder {
+                min-height: 150px;
+            }
+        }
+    }
+
+    &_photos {
+        margin-bottom: 0;
+        max-width: 450px;
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+            width: 100%;
+            flex-basis: 100%;
+        }
+    }
+
+    &_buttons {
+        display: flex;
+
+        @media (max-width: 768px) {
+            width: 66%;
+            flex-basis: unset;
+            margin-bottom: 0;
+
+            &:last-child {
+                width: unset;
+                flex-grow: 1;
+
+                .selectButton {
+                    width: 100%;
+                }
+            }
+        }
+
+        &Item {
+            width: 50%;
+            flex-grow: 1;
+            margin-right: 20px;
+        }
+
+        button {
+            background-color: #ECEFF1;
+            height: 100%;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &_selectButton {
+        width: 50%;
+    }
+
+    &__close {
+        position: absolute;
+        top: 21px;
+        right: 21px;
+        cursor: pointer;
+
+        svg {
+            transform: rotate(180deg);
+            vertical-align: top;
+        }
+    }
+
+    &__edit {
+        position: absolute;
+        top: 15px;
+        right: 61px;
+        cursor: pointer;
+    }
+
+    &__mobileHeader {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+        width: 100%;
+        margin-bottom: 8px;
+        padding: 16px 17px;
+        height: max-content;
+    }
+
+    &__mobileCloseButton {
+        color: #0097A7;
+        font-size: 17px;
+
+        svg {
+            transform: rotate(90deg);
+            margin-right: 6px;
+            width: 20px;
+            height: 12px;
+
+            path {
+                fill: #0097A7;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__innerHolder {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background: #fff;
+
+        @media (max-width: 768px) {
+            width: calc(100% - 16px);
+            margin: 0 8px 8px;
+            border-radius: 2px;
+            box-shadow: 0px 1px 1px rgba(12, 77, 84, 0.06);
+            padding: 12px;
+            box-sizing: border-box;
+        }
+    }
+
+    &__client {
+        &Info {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        &Photo {
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        &Name {
+            font-size: 14px;
+            font-weight: 500;
+            margin-right: 16px;
+        }
+
+        &Phone {
+            font-size: 12px;
+        }
+
+        &SecondLine {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.64);
+            margin-top: 3px;
+        }
+    }
+
+    .clientSellMainInfo {
+        margin-bottom: 0;
+
+        &__title {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0 0 3px 0;
+        }
+
+        &__date {
+            color: rgba(0, 0, 0, 0.32);
+            font-size: 10px;
+            font-weight: 500;
+            margin-bottom: 11px;
+        }
+
+        &__info {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+            width: 100%;
+            flex-basis: 100%;
+        }
+
+        .objectCharacteristics {
+            &__address {
+                margin-left: 8px;
+            }
+        }
+
+        .objectInfoTable {
+            &__alerts {
+                margin-left: 10px;
+            }
+
+        }
+    }
+
+    .clientSellInfoOwners {
+        margin: 0;
+        padding: 0;
+        margin-bottom: auto;
+        list-style-type: none;
+
+        &__peopleItem {
+            height: 50px;
+            box-sizing: border-box;
+            border-radius: 2px;
+            display: flex;
+            padding: 8px;
+            margin-bottom: 9px;
+        }
+
+        &__photo {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 7px;
+        }
+
+        &__content {
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+
+        &__firstline {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__name {
+            font-size: 10px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.72);
+        }
+
+        &__id {
+            font-size: 10px;
+            color: #999;
+        }
+
+        &__phone {
+            font-size: 12px;
+            color: #000;
+        }
+    }
+
+    .objectInfoMessages__messages {
+        min-height: 184px;
+    }
+
+    .objectInfoTable {
+        &__holder {
+            @media (max-width: 767px) {
+                flex-direction: column;
+
+                .objectAdditional {
+                    width: max-content;
+                }
+            }
+        }
+    }
+}

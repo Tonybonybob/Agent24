@@ -1,0 +1,45 @@
+.editLineSocials {
+    display: flex;
+    height: 69px;
+
+    &__icons {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 7px;
+        text-align: center;
+        line-height: 28px;
+        box-sizing: border-box;
+        border-radius: 2px;
+        cursor: pointer;
+
+        svg {
+            width: 15px;
+            height: 15px;
+            padding: 0 !important;
+
+            rect {
+                stroke: transparent;
+            }
+        }
+    }
+
+    &__delete {
+        margin: 0 17px 0 0;
+    }
+
+    .select {
+        width: 120px;
+        margin-right: 20px;
+    }
+
+    .textField {
+        width: 150px;
+        margin-right: 40px;
+    }
+
+}

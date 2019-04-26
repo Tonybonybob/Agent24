@@ -1,0 +1,99 @@
+.landingPage {
+    background: #fff;
+    overflow-y: hidden;
+  
+    .Navigation {
+      display: none;
+    }
+  
+    &__block {
+      min-height: 100vh;
+      box-sizing: border-box;
+      max-width: 1440px;
+      margin: 0 auto;
+      overflow: hidden;
+  
+      @media (max-width: 1023px) {
+        min-height: unset;
+      }
+    }
+  
+    &__mainPhoto {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 15;
+  
+      > img {
+        width: 100%;
+      }
+  
+      &Close {
+        width: 64px;
+        box-shadow: 0px 4px 12px rgba(7, 43, 24, 0.16);
+        height: 64px;
+        display: inline-block;
+        right: 50%;
+        transform: translate(50%);
+        top: 50vh;
+        border-radius: 50%;
+        position: fixed;
+        background: #51C7D3;
+        cursor: pointer;
+        display: flex;
+        z-index: 11;
+        align-items: center;
+        justify-content: center;
+  
+        > div {
+          height: 25px;
+          width: 2px;
+          background: #ffffff;
+          position: relative;
+          transform: rotate(45deg);
+  
+          &::after {
+            content: '';
+            transform: rotate(-90deg);
+            position: absolute;
+            width: 100%;
+            background: #FFF;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  
+  .container {
+    padding: 12px;
+  }
+  
+  .splashScreen {
+    height: 100vh;
+    background: rgba(197, 242, 228, 0.24);
+    box-shadow: inset 0px 0px 250px rgba(0, 0, 0, 0.16);
+    transition: opacity 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    &_fade {
+      opacity: 0;
+    }
+  
+    &__timeWrapper {
+      padding: 0;
+      background: rgba(157, 202, 198, 0.48);
+      width: 160px;
+      height: 2px;
+    }
+  
+    &__timer {
+      background: linear-gradient(270deg, rgba(0, 151, 167, 0.72) 0%, rgba(21, 190, 160, 0.72) 100%), #15BEA0;
+      transition: all 0.1s;
+      height: 2px;
+    }
+  }

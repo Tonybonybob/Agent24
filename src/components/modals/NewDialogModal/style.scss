@@ -1,0 +1,87 @@
+.newDialogModal {
+    padding: 95px 36px 27px 40px;
+    position: relative;
+
+    &__startButton {
+        display: 100%;
+    }
+
+    &__closeButton {
+        position: absolute;
+        top: 21px;
+        right: 21px;
+        cursor: pointer;
+
+        svg {
+            width: 17px;
+            height: 17px;
+        }
+
+    }
+
+    &__label {
+        margin: 16px 0 8px 0;
+        font-size: 10px;
+        color: #999;
+    }
+
+    &__groupName.textField__container {
+        margin-top: 20px;
+        width: 200px;
+    }
+
+    &__people {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 32px;
+
+        .newDialogHuman {
+            display: flex;
+            border: 1px solid #E3E3E3;
+            padding: 8px;
+            width: max-content;
+            margin: 8px 0 8px 8px;
+            cursor: pointer;
+            position: relative;
+
+            &-selected {
+                margin-left: 0;
+            }
+
+            &__photo {
+                width: 32px;
+                height: 32px;
+                flex-shrink: 0;
+                border-radius: 50%;
+                margin-right: 8px;
+            }
+
+            &__content {
+                width: 105px;
+            }
+
+            &__name {
+                font-size: 10px;
+                font-weight: 600;
+                color: rgba(0, 0, 0, 0.72);
+                margin: 0;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            &__phone {
+                font-size: 12px;
+            }
+
+            svg {
+                position: absolute;
+                right: -23px;
+                top: 15px;
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+}
